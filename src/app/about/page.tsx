@@ -62,8 +62,8 @@ export default function AboutPage() {
   return (
     <>
       {/* ── LUNA TOP BANNER ───────────────────────────────────── */}
-      <div className="bg-[#1F6B5F] py-3 px-4 flex items-center justify-center gap-4 overflow-hidden">
-        <div className="relative w-10 h-10 rounded-full overflow-hidden shrink-0 border-2 border-white/30">
+      <div className="bg-[#1F6B5F] py-4 px-4 flex items-center justify-center gap-4 overflow-hidden">
+        <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-white/30">
           <Image src="/luna-garden-flower.webp" alt="Luna" fill className="object-cover object-top" />
         </div>
         <p className="text-white text-sm font-medium">Say hi to Luna — my Chief Happiness Officer 🐾</p>
@@ -114,7 +114,7 @@ export default function AboutPage() {
                 />
               </div>
               {/* Luna floating badge */}
-              <div className="absolute -bottom-5 -right-4 rounded-[20px] overflow-hidden w-24 h-24 border-4 border-white"
+              <div className="absolute -bottom-8 -right-6 rounded-[24px] overflow-hidden w-36 h-36 border-4 border-white"
                 style={{ boxShadow: 'rgba(0,0,0,0.1) 0px 8px 24px' }}>
                 <Image src="/luna-garden-flower.webp" alt="Luna with a flower" fill className="object-cover object-top" />
               </div>
