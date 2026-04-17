@@ -84,11 +84,11 @@ export default function ListingsPage() {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image src="/luna-sold-rl.webp" alt="Luna celebrating a sold property — Marki Hoffman Royal LePage Kelowna" fill className="object-cover object-center" />
-          <div className="absolute inset-0 bg-black/65" />
+          <div className="absolute inset-0 bg-black/75" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h2 className="text-3xl font-bold tracking-tight mb-3">Don't See What You're Looking For?</h2>
-          <p className="text-white/70 mb-8">I have access to listings before they hit the market. Tell me what you need.</p>
+          <p className="text-white/90 mb-8">I have access to listings before they hit the market. Tell me what you need.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center gap-2 bg-[#1F6B5F] text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-[#174f47] transition-colors">
               Contact Marki <ArrowRight size={16} />
