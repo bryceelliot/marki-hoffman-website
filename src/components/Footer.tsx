@@ -122,21 +122,27 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-[#6a6a6a]">
-            © {new Date().getFullYear()} Marki Hoffman · Royal LePage Kelowna · All rights reserved.
+        {/* MLS Disclaimer */}
+        <div className="mt-10 pt-8 border-t border-white/10">
+          <p className="text-[11px] text-white/30 leading-relaxed mb-6">
+            The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA. The trademarks REALTOR®, REALTORS® and the REALTOR® logo are controlled by CREA and identify real estate professionals who are members of CREA. Used under license. This listing content is owned and licensed by CREA and its member boards. Listing data is deemed reliable but is not guaranteed accurate by the Association of Interior REALTORS® or Royal LePage Kelowna.
           </p>
-          <div className="flex flex-col sm:flex-row items-center gap-3">
-            <p className="text-xs text-[#6a6a6a]">Association of Interior REALTORS® · MLS®</p>
-            <span className="hidden sm:block text-[#6a6a6a]">·</span>
-            <a
-              href="https://bryceelliot.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-[#6a6a6a] hover:text-[#1F6B5F] transition-colors"
-            >
-              Created by Elliot Digital
-            </a>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-xs text-[#6a6a6a]">
+              © {new Date().getFullYear()} Marki Hoffman · Royal LePage Kelowna · All rights reserved.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center gap-3">
+              <p className="text-xs text-[#6a6a6a]">Association of Interior REALTORS® · MLS®</p>
+              <span className="hidden sm:block text-[#6a6a6a]">·</span>
+              <a
+                href="https://bryceelliot.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-[#6a6a6a] hover:text-[#1F6B5F] transition-colors"
+              >
+                Created by Elliot Digital
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -61,14 +61,6 @@ const values = [
 export default function AboutPage() {
   return (
     <>
-      {/* ── LUNA TOP BANNER ───────────────────────────────────── */}
-      <div className="bg-[#1F6B5F] py-4 px-4 flex items-center justify-center gap-4 overflow-hidden">
-        <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-white/30">
-          <Image src="/luna-garden-flower.webp" alt="Luna" fill className="object-cover object-top" />
-        </div>
-        <p className="text-white text-sm font-medium">Say hi to Luna — my Chief Happiness Officer 🐾</p>
-      </div>
-
       {/* ── HERO ──────────────────────────────────────────────── */}
       <section className="bg-[#f7f7f7] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
