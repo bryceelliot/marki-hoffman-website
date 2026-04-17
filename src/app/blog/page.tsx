@@ -66,7 +66,7 @@ const posts = [
 ]
 
 const categoryColors: Record<string, string> = {
-  'Market Update': 'bg-[#e8f5f2] text-[#2A7C6F]',
+  'Market Update': 'bg-[#e4f0ed] text-[#1F6B5F]',
   'Buyer Tips': 'bg-[#f0f7ff] text-[#428bff]',
   'Seller Tips': 'bg-[#f0fff4] text-[#34a853]',
   'Local Guide': 'bg-[#f5f0ff] text-[#460479]',
@@ -82,7 +82,7 @@ export default function BlogPage() {
       {/* ── HEADER ────────────────────────────────────────────── */}
       <section className="bg-[#f7f7f7] py-16 border-b border-[#e8e8e8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#2A7C6F] mb-2">Kelowna Real Estate</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-2">Kelowna Real Estate</p>
           <h1 className="text-5xl font-bold text-[#222222] tracking-tight mb-4">Blog & Insights</h1>
           <p className="text-lg text-[#6a6a6a] max-w-2xl">
             Market updates, buyer & seller tips, and a local's perspective on life in the Okanagan Valley.
@@ -114,7 +114,7 @@ export default function BlogPage() {
                   </span>
                   <span className="text-xs text-[#6a6a6a]">{featured.readTime}</span>
                 </div>
-                <h2 className="text-2xl font-bold text-[#222222] leading-tight mb-3 group-hover:text-[#2A7C6F] transition-colors">
+                <h2 className="text-2xl font-bold text-[#222222] leading-tight mb-3 group-hover:text-[#1F6B5F] transition-colors">
                   {featured.title}
                 </h2>
                 <p className="text-sm text-[#6a6a6a] leading-relaxed mb-5">{featured.excerpt}</p>
@@ -123,7 +123,7 @@ export default function BlogPage() {
                     <Calendar size={12} />
                     {featured.date}
                   </div>
-                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#2A7C6F]">
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1F6B5F]">
                     Read More <ArrowRight size={14} />
                   </span>
                 </div>
@@ -155,7 +155,7 @@ export default function BlogPage() {
                       </span>
                       <span className="text-xs text-[#6a6a6a]">{post.readTime}</span>
                     </div>
-                    <h3 className="text-base font-semibold text-[#222222] leading-tight mb-2 group-hover:text-[#2A7C6F] transition-colors flex-1">
+                    <h3 className="text-base font-semibold text-[#222222] leading-tight mb-2 group-hover:text-[#1F6B5F] transition-colors flex-1">
                       {post.title}
                     </h3>
                     <p className="text-sm text-[#6a6a6a] leading-relaxed mb-4 line-clamp-2">{post.excerpt}</p>

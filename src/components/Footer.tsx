@@ -34,24 +34,24 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="mb-4">
-              <span className="text-[#2A7C6F] font-bold text-2xl">Marki</span>
+              <span className="text-[#1F6B5F] font-bold text-2xl">Marki</span>
               <span className="text-white font-semibold text-2xl"> Hoffman</span>
             </div>
             <p className="text-[#6a6a6a] text-sm leading-relaxed mb-5">
               Real Estate Agent with Royal LePage Kelowna.<br />
-              Kelowna born and raised. UBC Okanagan alumni.
+              Kelowna born and raised. 10+ years serving the Okanagan.
             </p>
             <div className="flex gap-3 flex-wrap">
-              <a href="https://www.instagram.com/markihoffmanrealestate/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#2A7C6F] flex items-center justify-center transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/markihoffmanrealestate/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#1F6B5F] flex items-center justify-center transition-colors" aria-label="Instagram">
                 <InstagramIcon size={16} />
               </a>
-              <a href="https://www.facebook.com/hoffmanrealestatekelowna" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#2A7C6F] flex items-center justify-center transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/hoffmanrealestatekelowna" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#1F6B5F] flex items-center justify-center transition-colors" aria-label="Facebook">
                 <FacebookIcon size={16} />
               </a>
-              <a href="https://www.linkedin.com/in/marki-hoffman-076a4b167" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#2A7C6F] flex items-center justify-center transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/marki-hoffman-076a4b167" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#1F6B5F] flex items-center justify-center transition-colors" aria-label="LinkedIn">
                 <LinkedInIcon size={16} />
               </a>
-              <a href="https://linktr.ee/markihoffmanrealestate" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#2A7C6F] flex items-center justify-center transition-colors text-xs font-bold" aria-label="Linktree">
+              <a href="https://linktr.ee/markihoffmanrealestate" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#1F6B5F] flex items-center justify-center transition-colors text-xs font-bold" aria-label="Linktree">
                 lt
               </a>
             </div>
@@ -69,7 +69,7 @@ export default function Footer() {
                 { href: '/contact', label: 'Contact' },
               ].map(({ href, label }) => (
                 <li key={href}>
-                  <Link href={href} className="text-sm text-white/70 hover:text-[#2A7C6F] transition-colors">
+                  <Link href={href} className="text-sm text-white/70 hover:text-[#1F6B5F] transition-colors">
                     {label}
                   </Link>
                 </li>
@@ -89,7 +89,7 @@ export default function Footer() {
                 { href: '/client-resources#amenities', label: 'Kelowna Amenities' },
               ].map(({ href, label }) => (
                 <li key={href}>
-                  <Link href={href} className="text-sm text-white/70 hover:text-[#2A7C6F] transition-colors">
+                  <Link href={href} className="text-sm text-white/70 hover:text-[#1F6B5F] transition-colors">
                     {label}
                   </Link>
                 </li>
@@ -102,15 +102,15 @@ export default function Footer() {
             <h4 className="font-semibold text-sm uppercase tracking-widest text-[#6a6a6a] mb-4">Contact</h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5 text-sm text-white/70">
-                <Phone size={14} className="mt-0.5 shrink-0 text-[#2A7C6F]" />
+                <Phone size={14} className="mt-0.5 shrink-0 text-[#1F6B5F]" />
                 <a href="tel:2503175008" className="hover:text-white transition-colors">(250) 317-5008</a>
               </li>
               <li className="flex items-start gap-2.5 text-sm text-white/70">
-                <Mail size={14} className="mt-0.5 shrink-0 text-[#2A7C6F]" />
+                <Mail size={14} className="mt-0.5 shrink-0 text-[#1F6B5F]" />
                 <a href="mailto:marki@markihoffman.com" className="hover:text-white transition-colors">marki@markihoffman.com</a>
               </li>
               <li className="flex items-start gap-2.5 text-sm text-white/70">
-                <MapPin size={14} className="mt-0.5 shrink-0 text-[#2A7C6F]" />
+                <MapPin size={14} className="mt-0.5 shrink-0 text-[#1F6B5F]" />
                 <span>#1 – 1890 Cooper Road<br />Kelowna, BC V1Y 8B7</span>
               </li>
             </ul>
@@ -132,7 +132,7 @@ export default function Footer() {
               href="https://bryceelliot.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-[#6a6a6a] hover:text-[#2A7C6F] transition-colors"
+              className="text-xs text-[#6a6a6a] hover:text-[#1F6B5F] transition-colors"
             >
               Created by Elliot Digital
             </a>

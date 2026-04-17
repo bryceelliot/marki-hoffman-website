@@ -57,7 +57,7 @@ const jsonLd = {
       telephone: '+12503175008',
       email: 'marki@markihoffman.com',
       image: 'https://www.markihoffman.com/marki-dock.webp',
-      description: 'Kelowna born and raised REALTOR® with Royal LePage Kelowna. UBC Okanagan alumni helping buyers and sellers across the Okanagan Valley.',
+      description: 'Kelowna born and raised REALTOR® with Royal LePage Kelowna. Over 10 years of experience, proudly following in her father\'s 43-year real estate legacy.',
       address: {
         '@type': 'PostalAddress',
         streetAddress: '#1 – 1890 Cooper Road',

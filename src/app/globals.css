@@ -7,8 +7,8 @@
 /* Airbnb-Inspired Design Tokens */
 @theme inline {
   /* Brand */
-  --color-rausch: #2A7C6F;
-  --color-rausch-deep: #1e6359;
+  --color-rausch: #1F6B5F;
+  --color-rausch-deep: #174f47;
   --color-near-black: #222222;
   --color-secondary-text: #6a6a6a;
   --color-border-gray: #c1c1c1;
@@ -74,12 +74,12 @@
   --secondary-foreground: #222222;
   --muted: #f2f2f2;
   --muted-foreground: #6a6a6a;
-  --accent: #2A7C6F;
+  --accent: #1F6B5F;
   --accent-foreground: #ffffff;
   --destructive: #c13515;
   --border: #e8e8e8;
   --input: #e8e8e8;
-  --ring: #2A7C6F;
+  --ring: #1F6B5F;
   --radius: 0.875rem;
 
   /* Airbnb card shadow */
@@ -98,7 +98,7 @@
   --sidebar-accent: #f2f2f2;
   --sidebar-accent-foreground: #222222;
   --sidebar-border: #e8e8e8;
-  --sidebar-ring: #2A7C6F;
+  --sidebar-ring: #1F6B5F;
 }
 
 @layer base {

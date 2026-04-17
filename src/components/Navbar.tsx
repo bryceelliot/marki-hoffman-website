@@ -24,7 +24,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
-          <span className="text-[#2A7C6F] font-bold text-xl tracking-tight leading-none">Marki</span>
+          <span className="text-[#1F6B5F] font-bold text-xl tracking-tight leading-none">Marki</span>
           <span className="text-[#222222] font-semibold text-xl tracking-tight leading-none">Hoffman</span>
         </Link>
 
@@ -38,7 +38,7 @@ export default function Navbar() {
                 href={href}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   active
-                    ? 'text-[#2A7C6F] bg-[#e8f5f2]'
+                    ? 'text-[#1F6B5F] bg-[#e4f0ed]'
                     : 'text-[#222222] hover:bg-[#f2f2f2]'
                 }`}
               >
@@ -51,7 +51,7 @@ export default function Navbar() {
         {/* CTA */}
         <a
           href="tel:2503175008"
-          className="hidden md:flex items-center gap-2 bg-[#222222] text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-[#2A7C6F] transition-colors"
+          className="hidden md:flex items-center gap-2 bg-[#222222] text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-[#1F6B5F] transition-colors"
         >
           <Phone size={14} />
           (250) 317-5008
@@ -79,7 +79,7 @@ export default function Navbar() {
                   href={href}
                   onClick={() => setOpen(false)}
                   className={`px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
-                    active ? 'text-[#2A7C6F] bg-[#e8f5f2]' : 'text-[#222222] hover:bg-[#f2f2f2]'
+                    active ? 'text-[#1F6B5F] bg-[#e4f0ed]' : 'text-[#222222] hover:bg-[#f2f2f2]'
                   }`}
                 >
                   {label}

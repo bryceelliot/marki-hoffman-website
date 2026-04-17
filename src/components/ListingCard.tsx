@@ -11,12 +11,13 @@ interface Props {
 
 const typeBadgeStyles: Record<Listing['type'], string> = {
   'For Sale': 'bg-[#222222] text-white',
-  'Sold': 'bg-[#2A7C6F] text-white',
+  'Sold': 'bg-[#1F6B5F] text-white',
   'For Lease': 'bg-[#460479] text-white',
 }
 
 export default function ListingCard({ listing }: Props) {
   const formatPrice = (p: number, type: Listing['type']) => {
+    if (type === 'Sold') return 'SOLD'
     if (type === 'For Lease') return `$${p.toLocaleString()}/mo`
     return `$${p.toLocaleString()}`
   }
@@ -52,7 +53,7 @@ export default function ListingCard({ listing }: Props) {
         {/* Details */}
         <div className="p-5">
           <div className="flex items-start justify-between gap-2 mb-1">
-            <h3 className="text-base font-semibold text-[#222222] leading-tight group-hover:text-[#2A7C6F] transition-colors">
+            <h3 className="text-base font-semibold text-[#222222] leading-tight group-hover:text-[#1F6B5F] transition-colors">
               {listing.address}
             </h3>
             <span className="text-base font-bold text-[#222222] shrink-0">
@@ -63,17 +64,19 @@ export default function ListingCard({ listing }: Props) {
 
           <div className="flex items-center gap-4 text-sm text-[#6a6a6a]">
             <span className="flex items-center gap-1.5">
-              <Bed size={14} className="text-[#2A7C6F]" />
+              <Bed size={14} className="text-[#1F6B5F]" />
               {listing.beds} bd
             </span>
             <span className="flex items-center gap-1.5">
-              <Bath size={14} className="text-[#2A7C6F]" />
+              <Bath size={14} className="text-[#1F6B5F]" />
               {listing.baths} ba
             </span>
-            <span className="flex items-center gap-1.5">
-              <Square size={14} className="text-[#2A7C6F]" />
-              {listing.sqft.toLocaleString()} sqft
-            </span>
+            {listing.sqft > 0 && (
+              <span className="flex items-center gap-1.5">
+                <Square size={14} className="text-[#1F6B5F]" />
+                {listing.sqft.toLocaleString()} sqft
+              </span>
+            )}
           </div>
         </div>
       </div>

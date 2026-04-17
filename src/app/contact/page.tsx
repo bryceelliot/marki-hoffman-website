@@ -37,7 +37,7 @@ export default function ContactPage() {
       {/* ── HEADER ────────────────────────────────────────────── */}
       <section className="bg-[#f7f7f7] py-16 border-b border-[#e8e8e8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#2A7C6F] mb-2">Get in Touch</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-2">Get in Touch</p>
           <h1 className="text-5xl font-bold text-[#222222] tracking-tight mb-4">Contact Marki</h1>
           <p className="text-lg text-[#6a6a6a] max-w-xl">
             Ready to buy, sell, or just have questions? I'd love to hear from you.
@@ -64,30 +64,30 @@ export default function ContactPage() {
                 <h3 className="text-base font-semibold text-[#222222] mb-4">Direct Contact</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full bg-[#e8f5f2] flex items-center justify-center shrink-0">
-                      <Phone size={14} className="text-[#2A7C6F]" />
+                    <div className="w-8 h-8 rounded-full bg-[#e4f0ed] flex items-center justify-center shrink-0">
+                      <Phone size={14} className="text-[#1F6B5F]" />
                     </div>
                     <div>
                       <p className="text-xs text-[#6a6a6a] mb-0.5">Direct</p>
-                      <a href="tel:2503175008" className="text-sm font-semibold text-[#222222] hover:text-[#2A7C6F] transition-colors">
+                      <a href="tel:2503175008" className="text-sm font-semibold text-[#222222] hover:text-[#1F6B5F] transition-colors">
                         (250) 317-5008
                       </a>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full bg-[#e8f5f2] flex items-center justify-center shrink-0">
-                      <Mail size={14} className="text-[#2A7C6F]" />
+                    <div className="w-8 h-8 rounded-full bg-[#e4f0ed] flex items-center justify-center shrink-0">
+                      <Mail size={14} className="text-[#1F6B5F]" />
                     </div>
                     <div>
                       <p className="text-xs text-[#6a6a6a] mb-0.5">Email</p>
-                      <a href="mailto:marki@markihoffman.com" className="text-sm font-semibold text-[#222222] hover:text-[#2A7C6F] transition-colors">
+                      <a href="mailto:marki@markihoffman.com" className="text-sm font-semibold text-[#222222] hover:text-[#1F6B5F] transition-colors">
                         marki@markihoffman.com
                       </a>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full bg-[#e8f5f2] flex items-center justify-center shrink-0">
-                      <MapPin size={14} className="text-[#2A7C6F]" />
+                    <div className="w-8 h-8 rounded-full bg-[#e4f0ed] flex items-center justify-center shrink-0">
+                      <MapPin size={14} className="text-[#1F6B5F]" />
                     </div>
                     <div>
                       <p className="text-xs text-[#6a6a6a] mb-0.5">Office</p>
@@ -98,8 +98,8 @@ export default function ContactPage() {
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full bg-[#e8f5f2] flex items-center justify-center shrink-0">
-                      <Clock size={14} className="text-[#2A7C6F]" />
+                    <div className="w-8 h-8 rounded-full bg-[#e4f0ed] flex items-center justify-center shrink-0">
+                      <Clock size={14} className="text-[#1F6B5F]" />
                     </div>
                     <div>
                       <p className="text-xs text-[#6a6a6a] mb-0.5">Availability</p>
@@ -120,7 +120,7 @@ export default function ContactPage() {
                     href="https://www.instagram.com/markihoffmanrealestate/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 text-sm font-medium text-[#222222] hover:text-[#2A7C6F] transition-colors"
+                    className="flex items-center gap-3 text-sm font-medium text-[#222222] hover:text-[#1F6B5F] transition-colors"
                   >
                     <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af] flex items-center justify-center">
                       <InstagramIcon size={14} />
@@ -131,7 +131,7 @@ export default function ContactPage() {
                     href="https://www.facebook.com/hoffmanrealestatekelowna"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 text-sm font-medium text-[#222222] hover:text-[#2A7C6F] transition-colors"
+                    className="flex items-center gap-3 text-sm font-medium text-[#222222] hover:text-[#1F6B5F] transition-colors"
                   >
                     <div className="w-8 h-8 rounded-full bg-[#1877f2] flex items-center justify-center">
                       <FacebookIcon size={14} />
@@ -142,7 +142,7 @@ export default function ContactPage() {
                     href="https://www.linkedin.com/in/marki-hoffman-076a4b167"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 text-sm font-medium text-[#222222] hover:text-[#2A7C6F] transition-colors"
+                    className="flex items-center gap-3 text-sm font-medium text-[#222222] hover:text-[#1F6B5F] transition-colors"
                   >
                     <div className="w-8 h-8 rounded-full bg-[#0077b5] flex items-center justify-center">
                       <LinkedInIcon size={14} />
@@ -153,7 +153,7 @@ export default function ContactPage() {
                     href="https://linktr.ee/markihoffmanrealestate"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 text-sm font-medium text-[#222222] hover:text-[#2A7C6F] transition-colors"
+                    className="flex items-center gap-3 text-sm font-medium text-[#222222] hover:text-[#1F6B5F] transition-colors"
                   >
                     <div className="w-8 h-8 rounded-full bg-[#43e55e] flex items-center justify-center text-white font-bold text-xs">
                       lt
@@ -163,6 +163,24 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* ── MAP ───────────────────────────────────────────────── */}
+      <section className="bg-[#f7f7f7] pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-base font-semibold text-[#222222] mb-4">Royal LePage Kelowna Office</h3>
+          <div className="rounded-[20px] overflow-hidden" style={{ boxShadow: 'rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.06) 0px 4px 12px' }}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.8!2d-119.4436!3d49.8801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537d8cb3f0e95889%3A0x1a2b3c4d5e6f7a8b!2s1890%20Cooper%20Rd%2C%20Kelowna%2C%20BC%20V1Y%208B7!5e0!3m2!1sen!2sca!4v1"
+              width="100%"
+              height="400"
+              style={{ border: 0, display: 'block' }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Royal LePage Kelowna — 1890 Cooper Road"
+            />
           </div>
         </div>
       </section>

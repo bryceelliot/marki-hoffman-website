@@ -14,7 +14,7 @@ export default function ReviewCard({ review }: Props) {
       {/* Stars */}
       <div className="flex gap-0.5">
         {Array.from({ length: review.rating }).map((_, i) => (
-          <Star key={i} size={16} className="fill-[#2A7C6F] text-[#2A7C6F]" />
+          <Star key={i} size={16} className="fill-[#1F6B5F] text-[#1F6B5F]" />
         ))}
       </div>
 
@@ -25,7 +25,7 @@ export default function ReviewCard({ review }: Props) {
 
       {/* Author */}
       <div className="flex items-center gap-3 pt-2 border-t border-[#e8e8e8]">
-        <div className="w-9 h-9 rounded-full bg-[#2A7C6F] text-white flex items-center justify-center text-xs font-bold shrink-0">
+        <div className="w-9 h-9 rounded-full bg-[#1F6B5F] text-white flex items-center justify-center text-xs font-bold shrink-0">
           {review.avatar}
         </div>
         <div>

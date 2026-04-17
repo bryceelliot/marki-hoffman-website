@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, Star, Phone, Award, Users, Home, TrendingUp } from 'lucide-react'
+import { ArrowRight, Star, Phone, Award, Home, TrendingUp, MapPin } from 'lucide-react'
 import ListingCard from '@/components/ListingCard'
 import ReviewCard from '@/components/ReviewCard'
 import { listings } from '@/data/listings'
@@ -15,76 +15,69 @@ export default async function HomePage() {
   return (
     <>
       {/* ── HERO ──────────────────────────────────────────────── */}
-      <section className="relative min-h-[92vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/hero.webp"
-            alt="Marki Hoffman with Luna — Kelowna, BC"
-            fill
-            className="object-cover"
-            style={{ objectPosition: '50% 15%' }}
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
-        </div>
+      <section className="bg-[#f7f7f7] overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[88vh] items-center gap-0">
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="max-w-2xl">
-            <span className="inline-block mb-4 text-xs font-semibold tracking-widest uppercase text-[#2A7C6F] bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5">
-              Royal LePage Kelowna
-            </span>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6">
-              Your Home in the<br />
-              <span className="text-[#2A7C6F]">Okanagan</span><br />
-              Starts Here.
-            </h1>
-            <p className="text-lg text-white/80 leading-relaxed mb-10 max-w-xl">
-              Born and raised in the Okanagan. Over 10 years as a licensed REALTOR®, proudly following in her father's 43-year legacy of serving this community.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="/listings"
-                className="inline-flex items-center gap-2 bg-[#2A7C6F] text-white font-semibold text-sm px-7 py-3.5 rounded-lg hover:bg-[#1e6359] transition-colors"
-              >
-                View Listings
-                <ArrowRight size={16} />
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 bg-white text-[#222222] font-semibold text-sm px-7 py-3.5 rounded-lg hover:bg-[#f2f2f2] transition-colors"
-              >
-                Get in Touch
-              </Link>
+            {/* Text side */}
+            <div className="py-20 lg:py-24 lg:pr-12">
+              <span className="inline-block mb-5 text-xs font-semibold tracking-widest uppercase text-[#1F6B5F] bg-[#e4f0ed] rounded-full px-4 py-1.5">
+                Royal LePage Kelowna
+              </span>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#222222] leading-[1.05] tracking-tight mb-6">
+                Your Home in the<br />
+                <span className="text-[#1F6B5F]">Okanagan</span><br />
+                Starts Here.
+              </h1>
+              <p className="text-lg text-[#6a6a6a] leading-relaxed mb-10 max-w-xl">
+                Born and raised in the Okanagan. Over 10 years as a licensed REALTOR®, proudly following in her father's 43-year legacy of serving this community.
+              </p>
+              <div className="flex flex-wrap gap-4 mb-10">
+                <Link
+                  href="/listings"
+                  className="inline-flex items-center gap-2 bg-[#1F6B5F] text-white font-semibold text-sm px-7 py-3.5 rounded-lg hover:bg-[#174f47] transition-colors"
+                >
+                  View Listings <ArrowRight size={16} />
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 bg-[#222222] text-white font-semibold text-sm px-7 py-3.5 rounded-lg hover:bg-[#1F6B5F] transition-colors"
+                >
+                  Get in Touch
+                </Link>
+              </div>
+              {/* Mini contact card */}
+              <div className="inline-flex items-center gap-4 bg-white rounded-[16px] px-5 py-4"
+                style={{ boxShadow: 'rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px' }}>
+                <div className="w-10 h-10 rounded-full bg-[#1F6B5F] flex items-center justify-center text-white font-bold text-sm shrink-0">MH</div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-semibold text-[#222222]">Marki Hoffman</p>
+                  <div className="flex items-center gap-1 mt-0.5">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <Star key={i} size={10} className="fill-[#1F6B5F] text-[#1F6B5F]" />
+                    ))}
+                    <span className="text-xs text-[#6a6a6a] ml-1">5.0 Google</span>
+                  </div>
+                </div>
+                <a href="tel:2503175008" className="text-sm font-semibold text-[#1F6B5F] hover:text-[#174f47] transition-colors whitespace-nowrap">
+                  (250) 317-5008
+                </a>
+              </div>
             </div>
-          </div>
-        </div>
 
-        {/* Floating contact card */}
-        <div
-          className="absolute bottom-8 right-8 hidden lg:block bg-white rounded-[20px] p-5 max-w-[260px]"
-          style={{ boxShadow: 'rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px' }}
-        >
-          <div className="flex items-center gap-3 mb-3">
-            <div className="w-10 h-10 rounded-full bg-[#2A7C6F] flex items-center justify-center text-white font-bold text-sm">
-              MH
+            {/* Photo side */}
+            <div className="hidden lg:block relative h-full min-h-[88vh]">
+              <Image
+                src="/hero.webp"
+                alt="Marki Hoffman with Luna — Kelowna, BC"
+                fill
+                className="object-cover object-center"
+                priority
+                sizes="50vw"
+              />
             </div>
-            <div>
-              <p className="text-sm font-semibold text-[#222222]">Marki Hoffman</p>
-              <p className="text-xs text-[#6a6a6a]">REALTOR® · Royal LePage</p>
-            </div>
+
           </div>
-          <div className="flex gap-0.5 mb-2">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} size={12} className="fill-[#2A7C6F] text-[#2A7C6F]" />
-            ))}
-            <span className="text-xs text-[#6a6a6a] ml-1">5.0 Google</span>
-          </div>
-          <a
-            href="tel:2503175008"
-            className="block text-center text-sm font-medium bg-[#222222] text-white py-2 rounded-lg hover:bg-[#2A7C6F] transition-colors"
-          >
-            (250) 317-5008
-          </a>
         </div>
       </section>
 
@@ -93,13 +86,13 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
+              { icon: MapPin, value: 'Local', label: 'Kelowna Born & Raised' },
               { icon: Home, value: '10+', label: 'Years Licensed' },
-              { icon: Users, value: '43', label: 'Dad\'s Years in RE' },
-              { icon: TrendingUp, value: '100%', label: 'Local Expertise' },
               { icon: Award, value: '5★', label: 'Google Rating' },
+              { icon: TrendingUp, value: 'RL', label: 'Royal LePage REALTOR®' },
             ].map(({ icon: Icon, value, label }) => (
               <div key={label} className="flex flex-col items-center gap-2">
-                <Icon size={22} className="text-[#2A7C6F]" />
+                <Icon size={22} className="text-[#1F6B5F]" />
                 <span className="text-3xl font-bold">{value}</span>
                 <span className="text-sm text-white/60">{label}</span>
               </div>
@@ -113,12 +106,12 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-10">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#2A7C6F] mb-2">Current Listings</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-2">Current Listings</p>
               <h2 className="text-4xl font-bold text-[#222222] tracking-tight">Featured Properties</h2>
             </div>
             <Link
               href="/listings"
-              className="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-[#222222] hover:text-[#2A7C6F] transition-colors"
+              className="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-[#222222] hover:text-[#1F6B5F] transition-colors"
             >
               View All <ArrowRight size={16} />
             </Link>
@@ -131,7 +124,7 @@ export default async function HomePage() {
           <div className="mt-8 text-center sm:hidden">
             <Link
               href="/listings"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-[#222222] hover:text-[#2A7C6F] transition-colors"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[#222222] hover:text-[#1F6B5F] transition-colors"
             >
               View All Listings <ArrowRight size={16} />
             </Link>
@@ -157,13 +150,13 @@ export default async function HomePage() {
                 style={{ boxShadow: 'rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px' }}
               >
                 <p className="text-2xl font-bold text-[#222222]">Born &</p>
-                <p className="text-2xl font-bold text-[#2A7C6F]">Raised Here</p>
+                <p className="text-2xl font-bold text-[#1F6B5F]">Raised Here</p>
                 <p className="text-xs text-[#6a6a6a] mt-1">Kelowna, BC</p>
               </div>
             </div>
 
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#2A7C6F] mb-3">About Marki</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-3">About Marki</p>
               <h2 className="text-4xl font-bold text-[#222222] tracking-tight mb-6 leading-tight">
                 Local Knowledge.<br />Genuine Care.
               </h2>
@@ -178,7 +171,7 @@ export default async function HomePage() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
                   href="/about"
-                  className="inline-flex items-center gap-2 bg-[#222222] text-white font-semibold text-sm px-6 py-3 rounded-lg hover:bg-[#2A7C6F] transition-colors"
+                  className="inline-flex items-center gap-2 bg-[#222222] text-white font-semibold text-sm px-6 py-3 rounded-lg hover:bg-[#1F6B5F] transition-colors"
                 >
                   More About Me <ArrowRight size={16} />
                 </Link>
@@ -199,12 +192,12 @@ export default async function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#2A7C6F] mb-2">Google Reviews</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-2">Google Reviews</p>
             <h2 className="text-4xl font-bold text-[#222222] tracking-tight mb-3">What Clients Are Saying</h2>
             <div className="flex items-center justify-center gap-2">
               <div className="flex gap-0.5">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={18} className="fill-[#2A7C6F] text-[#2A7C6F]" />
+                  <Star key={i} size={18} className="fill-[#1F6B5F] text-[#1F6B5F]" />
                 ))}
               </div>
               <span className="text-sm text-[#6a6a6a] font-medium">5.0 · Google Reviews</span>
@@ -230,7 +223,7 @@ export default async function HomePage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#2A7C6F] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1e6359] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#1F6B5F] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#174f47] transition-colors"
             >
               Contact Marki <ArrowRight size={16} />
             </Link>
