@@ -27,7 +27,7 @@ export default function BlogPage() {
             </div>
             <div className="hidden lg:block absolute inset-y-0 right-0 left-1/2">
               <Image
-                src="/marki-headshot-outdoor.webp"
+                src="/kelowna-trail.webp"
                 alt="Marki Hoffman REALTOR® Kelowna"
                 fill
                 className="object-cover object-top"
