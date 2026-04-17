@@ -8,12 +8,12 @@ export default function ListingInquiryForm({ address }: { address: string }) {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setStatus('sending')
-    const data = new FormData(e.currentTarget)
+    const data = Object.fromEntries(new FormData(e.currentTarget))
     try {
-      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' },
+        body: JSON.stringify({ _subject: `Listing Inquiry — ${address}`, ...data }),
+        headers: { 'Content-Type': 'application/json' },
       })
       setStatus(res.ok ? 'success' : 'error')
       if (res.ok) e.currentTarget.reset()

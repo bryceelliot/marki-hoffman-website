@@ -10,13 +10,13 @@ export default function ContactForm() {
     setStatus('sending')
 
     const form = e.currentTarget
-    const data = new FormData(form)
+    const data = Object.fromEntries(new FormData(form))
 
     try {
-      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' },
+        body: JSON.stringify({ _subject: 'New Contact Form Submission', ...data }),
+        headers: { 'Content-Type': 'application/json' },
       })
       if (res.ok) {
         setStatus('success')
