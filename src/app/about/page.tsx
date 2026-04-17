@@ -29,32 +29,32 @@ function LinkedInIcon({ size = 16 }: { size?: number }) {
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Meet Marki Hoffman — Kelowna born and raised REALTOR® with Royal LePage Kelowna. Local expertise, genuine care.',
+  description: 'Meet Marki Hoffman — Kelowna born and raised REALTOR® with over 10 years of experience at Royal LePage Kelowna, following in her father\'s 43-year legacy.',
 }
 
 const credentials = [
   { icon: MapPin, text: 'Kelowna Born & Raised' },
   { icon: GraduationCap, text: 'UBC Okanagan Alumni' },
-  { icon: Award, text: 'Royal LePage Kelowna REALTOR®' },
-  { icon: Heart, text: 'Association of Interior REALTORS®' },
+  { icon: Award, text: '10+ Years Licensed REALTOR®' },
+  { icon: Heart, text: 'Royal LePage Kelowna' },
 ]
 
 const values = [
   {
-    title: 'Local Expertise',
-    description: 'Born and raised in Kelowna, I know every neighbourhood, every street, and every hidden gem in the Okanagan Valley.',
+    title: 'Family Legacy',
+    description: 'My father Gord Hoffman served Okanagan clients for 43 years. I spent my first decade in real estate learning from him — integrity and trust are in my DNA.',
   },
   {
-    title: 'Honest Guidance',
-    description: 'Real estate is one of the biggest decisions of your life. I give you straight talk, not just what you want to hear.',
+    title: 'Attention to Detail',
+    description: 'Working aboard private luxury yachts in the U.S. taught me the standard of service people deserve. That same care goes into every transaction.',
   },
   {
-    title: 'Full-Service Support',
-    description: 'From first showing to closing day and beyond, I\'m with you every step of the way — and available when you need me.',
+    title: 'Local Roots',
+    description: 'Born and raised in Kelowna, snowboarding Big White since age four. I know this valley and I\'m proud to call it home.',
   },
   {
-    title: 'Community Roots',
-    description: 'My network runs deep in the Okanagan. I connect clients with trusted local professionals — inspectors, lawyers, lenders.',
+    title: 'Lasting Relationships',
+    description: 'Real estate is more than a transaction — it\'s about connection. Many of my clients become friends, and that\'s the part of this business I love most.',
   },
 ]
 
@@ -71,7 +71,7 @@ export default function AboutPage() {
                 Your Kelowna<br />Real Estate Expert
               </h1>
               <p className="text-lg text-[#6a6a6a] leading-relaxed mb-8">
-                Real Estate Agent with Royal LePage Kelowna · Kelowna born and raised · UBC Okanagan alumni
+                10+ years as a licensed REALTOR® with Royal LePage Kelowna, following in the footsteps of her father, Gord Hoffman — 43 years serving the Okanagan.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
@@ -96,10 +96,10 @@ export default function AboutPage() {
             <div className="relative max-w-md mx-auto lg:mx-0 lg:ml-auto">
               <div className="relative aspect-[3/4] rounded-[32px] overflow-hidden">
                 <Image
-                  src="/marki-dock.webp"
-                  alt="Marki Hoffman with Luna on Okanagan Lake dock"
+                  src="/marki-headshot.webp"
+                  alt="Marki Hoffman REALTOR® Royal LePage Kelowna"
                   fill
-                  className="object-cover object-center"
+                  className="object-cover object-top"
                 />
               </div>
               <div
@@ -121,16 +121,16 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-[#222222] tracking-tight mb-8">From the Okanagan, For the Okanagan</h2>
           <div className="space-y-5 text-[#6a6a6a] leading-relaxed text-[15px]">
             <p>
-              Growing up in Kelowna, I've watched this community evolve from a quiet orchard town into one of Canada's most sought-after real estate markets. I've seen the lake at every season, explored every neighbourhood, and I'm proud to call this place home.
+              Born and raised in the Okanagan, real estate has always been part of my life. I've been a licensed Realtor® here for over 10 years, proudly following in the footsteps of my father, Gord Hoffman, who served local clients for an incredible 43 years. Working alongside him for my first decade in the business taught me the importance of integrity, trust, and building lasting relationships — values I continue to uphold with every client I work with.
             </p>
             <p>
-              After graduating from UBC Okanagan, I channeled my passion for this community into a career in real estate with Royal LePage Kelowna — one of the most respected brokerages in the valley. It's not just a job; it's a way of connecting people with the place I love most.
+              Before my real estate career, I earned my degree from UBC Okanagan, including a year studying abroad in Australia. After a couple of years working as a recreation coordinator in the oil and gas sector, I worked aboard private luxury yachts in the U.S., where I gained invaluable experience in high-level service, organization, and attention to detail — qualities I bring to every client relationship today.
             </p>
             <p>
-              Whether you're a first-time buyer navigating a competitive market, a family looking to upsize, or someone ready to sell and start a new chapter, I bring the same energy to every file: deep local knowledge, honest advice, and genuine enthusiasm for getting you the best possible outcome.
+              When I'm not helping clients buy or sell their homes, you can usually find me outdoors with my canine companion, Luna — my constant adventure buddy. I love hiking the local trails with her, mountain biking, and soaking up the Okanagan lifestyle. I've been snowboarding at Big White since I was four, and playing competitive softball as a teenager, now slow-pitch every summer.
             </p>
             <p>
-              When I'm not helping clients, you'll find me exploring Kelowna's trails and wineries with Luna — my dog and unofficial mascot.
+              For me, real estate is more than a transaction — it's about connection. Many of my clients become friends, and that's the part of this business I love most.
             </p>
           </div>
         </div>

@@ -93,7 +93,7 @@ export const listings: Listing[] = [
     baths: 3,
     sqft: 2_300,
     type: 'Sold',
-    image: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=800&q=80',
+    image: '/luna-sold-autumn.webp',
     description: 'Beautifully updated two-storey home backing onto Knox Mountain Park. Hardwood floors throughout, updated bathrooms, and a private backyard oasis.',
     features: ['Backing Parkland', 'Updated Baths', 'Hardwood Floors', 'Private Yard'],
     mlsNumber: '10XXXZZZ',

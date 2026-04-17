@@ -39,7 +39,7 @@ export default async function HomePage() {
               Starts Here.
             </h1>
             <p className="text-lg text-white/80 leading-relaxed mb-10 max-w-xl">
-              Kelowna born and raised. UBC Okanagan alumni. As your local REALTOR®, I bring deep community roots and genuine care to every transaction.
+              Born and raised in the Okanagan. Over 10 years as a licensed REALTOR®, proudly following in her father's 43-year legacy of serving this community.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -93,9 +93,9 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { icon: Home, value: '150+', label: 'Homes Sold' },
-              { icon: Users, value: '200+', label: 'Happy Clients' },
-              { icon: TrendingUp, value: '98%', label: 'Client Satisfaction' },
+              { icon: Home, value: '10+', label: 'Years Licensed' },
+              { icon: Users, value: '43', label: 'Dad\'s Years in RE' },
+              { icon: TrendingUp, value: '100%', label: 'Local Expertise' },
               { icon: Award, value: '5★', label: 'Google Rating' },
             ].map(({ icon: Icon, value, label }) => (
               <div key={label} className="flex flex-col items-center gap-2">
@@ -146,10 +146,10 @@ export default async function HomePage() {
             <div className="relative">
               <div className="relative aspect-[4/5] rounded-[32px] overflow-hidden max-w-md mx-auto lg:mx-0">
                 <Image
-                  src="/sold-fall.webp"
-                  alt="Marki Hoffman REALTOR® Kelowna BC — Royal LePage Kelowna real estate agent"
+                  src="/marki-luna-lake.webp"
+                  alt="Marki Hoffman with Luna by Okanagan Lake — Royal LePage Kelowna REALTOR®"
                   fill
-                  className="object-cover object-center"
+                  className="object-cover object-top"
                 />
               </div>
               <div
@@ -169,10 +169,10 @@ export default async function HomePage() {
               </h2>
               <div className="space-y-4 text-[#6a6a6a] leading-relaxed">
                 <p>
-                  As a born-and-raised Kelowna local and UBC Okanagan alumna, I don't just sell homes in the Okanagan — I live here, I love it here, and I know every neighbourhood inside-out.
+                  Real estate has always been part of my life. I'm a licensed Realtor® with over 10 years of experience, proudly following in the footsteps of my father, Gord Hoffman, who served Okanagan clients for an incredible 43 years.
                 </p>
                 <p>
-                  Whether you're buying your first home, upgrading to your dream property, or selling and starting the next chapter, I bring market expertise, honest guidance, and a personal touch you won't find anywhere else.
+                  For me, real estate is more than a transaction — it's about connection. Many of my clients become friends, and that's the part of this business I love most.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
