@@ -2,76 +2,11 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Calendar } from 'lucide-react'
+import { posts, categoryColors } from '@/data/blog'
 
 export const metadata: Metadata = {
   title: 'Blog',
   description: 'Kelowna real estate news, market updates, and local insights from REALTOR® Marki Hoffman.',
-}
-
-const posts = [
-  {
-    slug: 'kelowna-market-update-2026',
-    title: "Kelowna Real Estate Market Update — Spring 2026",
-    excerpt: "What buyers and sellers need to know about the current Okanagan market. Inventory levels, pricing trends, and what to expect this season.",
-    date: 'April 10, 2026',
-    category: 'Market Update',
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
-    readTime: '5 min read',
-  },
-  {
-    slug: 'first-time-buyer-guide-kelowna',
-    title: "First-Time Buyer's Guide to Kelowna in 2026",
-    excerpt: "Everything you need to know before buying your first home in the Okanagan — from getting pre-approved to making your offer stand out.",
-    date: 'March 22, 2026',
-    category: 'Buyer Tips',
-    image: 'https://images.unsplash.com/photo-1582407947304-fd86f28f7e47?w=800&q=80',
-    readTime: '8 min read',
-  },
-  {
-    slug: 'best-kelowna-neighbourhoods-2026',
-    title: "The Best Kelowna Neighbourhoods to Live In Right Now",
-    excerpt: "From the Lower Mission waterfront to the trendy Pandosy Village — a local's guide to Kelowna's most sought-after areas.",
-    date: 'March 5, 2026',
-    category: 'Local Guide',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
-    readTime: '6 min read',
-  },
-  {
-    slug: 'home-staging-tips-kelowna',
-    title: "Home Staging Tips That Help Kelowna Homes Sell Faster",
-    excerpt: "Proven staging strategies that get results in the Okanagan market — and won't cost you a fortune.",
-    date: 'February 18, 2026',
-    category: 'Seller Tips',
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80',
-    readTime: '4 min read',
-  },
-  {
-    slug: 'kelowna-winery-lifestyle',
-    title: "Living the Okanagan Lifestyle: Wineries, Lakes, and Real Estate",
-    excerpt: "What makes Kelowna so special — and why more Canadians are choosing the Okanagan Valley as their forever home.",
-    date: 'January 30, 2026',
-    category: 'Lifestyle',
-    image: 'https://images.unsplash.com/photo-1474722883778-792e7990302f?w=800&q=80',
-    readTime: '4 min read',
-  },
-  {
-    slug: 'investment-property-kelowna',
-    title: "Is Kelowna a Good Place to Invest in Real Estate in 2026?",
-    excerpt: "Rental demand, appreciation trends, and the best property types for investors in the current Okanagan market.",
-    date: 'January 12, 2026',
-    category: 'Investment',
-    image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80',
-    readTime: '7 min read',
-  },
-]
-
-const categoryColors: Record<string, string> = {
-  'Market Update': 'bg-[#e4f0ed] text-[#1F6B5F]',
-  'Buyer Tips': 'bg-[#f0f7ff] text-[#428bff]',
-  'Seller Tips': 'bg-[#f0fff4] text-[#34a853]',
-  'Local Guide': 'bg-[#f5f0ff] text-[#460479]',
-  'Lifestyle': 'bg-[#fff8f0] text-[#ff9500]',
-  'Investment': 'bg-[#f0f7ff] text-[#222222]',
 }
 
 export default function BlogPage() {
@@ -109,7 +44,7 @@ export default function BlogPage() {
               </div>
               <div className="p-8 lg:p-10 flex flex-col justify-center bg-white">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className={`text-xs font-semibold px-3 py-1 rounded-full ${categoryColors[featured.category]}`}>
+                  <span className={`text-xs font-semibold px-3 py-1 rounded-full ${categoryColors[featured.category] ?? 'bg-[#f2f2f2] text-[#222222]'}`}>
                     {featured.category}
                   </span>
                   <span className="text-xs text-[#6a6a6a]">{featured.readTime}</span>
