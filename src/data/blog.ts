@@ -23,7 +23,7 @@ export const posts: BlogPost[] = [
     excerpt: 'What buyers and sellers need to know about the current Okanagan market. Inventory levels, pricing trends, and what to expect this season.',
     date: 'April 10, 2026',
     category: 'Market Update',
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1200',
     readTime: '5 min read',
     content: [
       {
@@ -111,7 +111,7 @@ export const posts: BlogPost[] = [
     excerpt: 'Everything you need to know before buying your first home in the Okanagan — from getting pre-approved to making your offer stand out.',
     date: 'March 22, 2026',
     category: 'Buyer Tips',
-    image: 'https://images.unsplash.com/photo-1582407947304-fd86f28f7e47?w=1200&q=80',
+    image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1200',
     readTime: '8 min read',
     content: [
       {
@@ -217,7 +217,7 @@ export const posts: BlogPost[] = [
     excerpt: 'From the Lower Mission waterfront to the trendy Pandosy Village — a local\'s guide to Kelowna\'s most sought-after areas.',
     date: 'March 5, 2026',
     category: 'Local Guide',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80',
+    image: 'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1200',
     readTime: '6 min read',
     content: [
       {
@@ -317,7 +317,7 @@ export const posts: BlogPost[] = [
     excerpt: 'Proven staging strategies that get results in the Okanagan market — and won\'t cost you a fortune.',
     date: 'February 18, 2026',
     category: 'Seller Tips',
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80',
+    image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200',
     readTime: '5 min read',
     content: [
       {
@@ -414,7 +414,7 @@ export const posts: BlogPost[] = [
     excerpt: 'What makes Kelowna so special — and why more Canadians are choosing the Okanagan Valley as their forever home.',
     date: 'January 30, 2026',
     category: 'Lifestyle',
-    image: 'https://images.unsplash.com/photo-1474722883778-792e7990302f?w=1200&q=80',
+    image: 'https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=1200',
     readTime: '4 min read',
     content: [
       {
@@ -474,7 +474,7 @@ export const posts: BlogPost[] = [
     excerpt: 'Rental demand, appreciation trends, and the best property types for investors in the current Okanagan market.',
     date: 'January 12, 2026',
     category: 'Investment',
-    image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1200&q=80',
+    image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1200',
     readTime: '7 min read',
     content: [
       {

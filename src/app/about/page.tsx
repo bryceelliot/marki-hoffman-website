@@ -157,8 +157,8 @@ export default function AboutPage() {
       <section className="pb-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {/* Row 1: wide landscape + portrait */}
-            <div className="col-span-2 relative aspect-[16/9] rounded-[20px] overflow-hidden">
+            {/* Row 1: wide landscape (col-span-2 on md+) + 2 portraits */}
+            <div className="col-span-2 relative aspect-square md:aspect-[16/9] rounded-[20px] overflow-hidden">
               <Image
                 src="/marki-luna-waterfront.webp"
                 alt="Marki and Luna at Okanagan waterfront"
@@ -167,7 +167,7 @@ export default function AboutPage() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-            <div className="relative aspect-[3/4] rounded-[20px] overflow-hidden">
+            <div className="relative aspect-square md:aspect-[3/4] rounded-[20px] overflow-hidden">
               <Image
                 src="/marki-luna-walking.webp"
                 alt="Marki walking Luna at the park"
@@ -176,7 +176,7 @@ export default function AboutPage() {
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
-            <div className="relative aspect-[3/4] rounded-[20px] overflow-hidden">
+            <div className="relative aspect-square md:aspect-[3/4] rounded-[20px] overflow-hidden">
               <Image
                 src="/marki-headshot-outdoor.webp"
                 alt="Marki Hoffman professional photo"
@@ -186,8 +186,8 @@ export default function AboutPage() {
               />
             </div>
 
-            {/* Row 2: portrait + wide landscape */}
-            <div className="relative aspect-[3/4] rounded-[20px] overflow-hidden">
+            {/* Row 2: portrait + wide landscape (col-span-2 on md+) + portrait */}
+            <div className="relative aspect-square md:aspect-[3/4] rounded-[20px] overflow-hidden">
               <Image
                 src="/marki-luna-lake.webp"
                 alt="Marki and Luna by Okanagan Lake"
@@ -196,7 +196,7 @@ export default function AboutPage() {
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
-            <div className="col-span-2 relative aspect-[16/9] rounded-[20px] overflow-hidden">
+            <div className="col-span-2 relative aspect-square md:aspect-[16/9] rounded-[20px] overflow-hidden">
               <Image
                 src="/hero.webp"
                 alt="Marki and Luna in the Okanagan"
@@ -205,7 +205,7 @@ export default function AboutPage() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-            <div className="relative aspect-[3/4] rounded-[20px] overflow-hidden">
+            <div className="relative aspect-square md:aspect-[3/4] rounded-[20px] overflow-hidden">
               <Image
                 src="/luna-sold-rl.webp"
                 alt="Luna celebrating another sold property"
