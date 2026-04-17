@@ -101,10 +101,9 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Portrait */}
-            <div className="relative max-w-sm mx-auto lg:mx-0 lg:ml-auto">
-              <div className="relative aspect-[3/4] rounded-[32px] overflow-hidden"
-                style={{ boxShadow: 'rgba(0,0,0,0.04) 0px 0px 0px 1px, rgba(0,0,0,0.12) 0px 8px 24px' }}>
+            {/* Portraits */}
+            <div className="flex gap-4 max-w-md mx-auto lg:mx-0 lg:ml-auto">
+              <div className="flex-1 relative rounded-[28px] overflow-hidden" style={{ height: 480, boxShadow: 'rgba(0,0,0,0.04) 0px 0px 0px 1px, rgba(0,0,0,0.12) 0px 8px 24px' }}>
                 <Image
                   src="/marki-headshot.webp"
                   alt="Marki Hoffman REALTOR® Royal LePage Kelowna"
@@ -113,10 +112,12 @@ export default function AboutPage() {
                   priority
                 />
               </div>
-              {/* Luna floating badge */}
-              <div className="absolute -bottom-8 -right-6 rounded-[24px] overflow-hidden w-36 h-36 border-4 border-white"
-                style={{ boxShadow: 'rgba(0,0,0,0.1) 0px 8px 24px' }}>
-                <Image src="/luna-garden-flower.webp" alt="Luna with a flower" fill className="object-cover object-top" />
+              <div className="w-44 relative rounded-[28px] overflow-hidden self-end" style={{ height: 320, boxShadow: 'rgba(0,0,0,0.04) 0px 0px 0px 1px, rgba(0,0,0,0.12) 0px 8px 24px' }}>
+                <Image src="/luna-garden-flower.webp" alt="Luna with a flower on her head" fill className="object-cover object-top" />
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent px-3 py-3">
+                  <p className="text-white text-xs font-semibold">Luna 🐾</p>
+                  <p className="text-white/70 text-[10px]">Chief Happiness Officer</p>
+                </div>
               </div>
             </div>
           </div>
