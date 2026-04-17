@@ -15,13 +15,27 @@ export default function BlogPage() {
   return (
     <>
       {/* ── HEADER ────────────────────────────────────────────── */}
-      <section className="bg-[#f7f7f7] py-16 border-b border-[#e8e8e8]">
+      <section className="bg-[#f7f7f7] border-b border-[#e8e8e8] overflow-hidden relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-2">Kelowna Real Estate</p>
-          <h1 className="text-5xl font-bold text-[#222222] tracking-tight mb-4">Blog & Insights</h1>
-          <p className="text-lg text-[#6a6a6a] max-w-2xl">
-            Market updates, buyer & seller tips, and a local's perspective on life in the Okanagan Valley.
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[260px] items-center gap-0">
+            <div className="py-16">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-2">Kelowna Real Estate</p>
+              <h1 className="text-5xl font-bold text-[#222222] tracking-tight mb-4">Blog & Insights</h1>
+              <p className="text-lg text-[#6a6a6a] max-w-xl">
+                Market updates, buyer & seller tips, and a local's perspective on life in the Okanagan Valley.
+              </p>
+            </div>
+            <div className="hidden lg:block absolute inset-y-0 right-0 left-1/2">
+              <Image
+                src="/marki-headshot-outdoor.webp"
+                alt="Marki Hoffman REALTOR® Kelowna"
+                fill
+                className="object-cover object-top"
+                sizes="50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#f7f7f7] via-[#f7f7f7]/20 to-transparent" />
+            </div>
+          </div>
         </div>
       </section>
 

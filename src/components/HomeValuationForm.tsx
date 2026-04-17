@@ -29,7 +29,7 @@ export default function HomeValuationForm() {
           <span className="text-white text-2xl">✓</span>
         </div>
         <h3 className="text-xl font-bold text-[#222222] mb-2">Request Received!</h3>
-        <p className="text-[#6a6a6a]">Marki will prepare your CMA and be in touch within 24 hours.</p>
+        <p className="text-[#6a6a6a]">I'll prepare your CMA and be in touch within 24 hours.</p>
       </div>
     )
   }
@@ -130,7 +130,7 @@ export default function HomeValuationForm() {
       )}
 
       <p className="text-xs text-[#6a6a6a] text-center">
-        Free, no-obligation. Marki typically responds within 24 hours.
+        Free, no-obligation. I typically respond within 24 hours.
       </p>
     </form>
   )

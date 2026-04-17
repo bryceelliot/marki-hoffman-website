@@ -83,8 +83,8 @@ export default function ListingsPage() {
       {/* ── CTA ───────────────────────────────────────────────── */}
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/sold-sunset.webp" alt="Marki Hoffman Royal LePage Kelowna SOLD sign — Okanagan real estate results" fill className="object-cover object-center" />
-          <div className="absolute inset-0 bg-black/60" />
+          <Image src="/luna-sold-rl.webp" alt="Luna celebrating a sold property — Marki Hoffman Royal LePage Kelowna" fill className="object-cover object-center" />
+          <div className="absolute inset-0 bg-black/65" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h2 className="text-3xl font-bold tracking-tight mb-3">Don't See What You're Looking For?</h2>

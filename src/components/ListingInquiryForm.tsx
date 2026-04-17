@@ -26,7 +26,7 @@ export default function ListingInquiryForm({ address }: { address: string }) {
     return (
       <div className="bg-[#e4f0ed] text-[#1F6B5F] rounded-[16px] px-5 py-6 text-center">
         <p className="font-semibold mb-1">Message sent!</p>
-        <p className="text-sm">Marki will be in touch shortly.</p>
+        <p className="text-sm">I'll be in touch shortly.</p>
       </div>
     )
   }

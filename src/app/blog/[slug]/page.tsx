@@ -134,7 +134,7 @@ export default async function BlogPostPage({ params }: Props) {
                   </div>
                 </div>
                 <p className="text-sm text-[#6a6a6a] leading-relaxed mb-5">
-                  Born and raised in Kelowna. 10+ years helping Okanagan clients buy and sell with confidence.
+                  Born and raised in Kelowna. 10+ years helping my clients buy and sell with confidence.
                 </p>
                 <Link
                   href="/contact"

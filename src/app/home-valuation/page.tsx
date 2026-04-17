@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { Phone, TrendingUp, CheckCircle2, Clock, DollarSign, Star } from 'lucide-react'
 import HomeValuationForm from '@/components/HomeValuationForm'
 
@@ -17,13 +18,28 @@ const whyPoints = [
 export default function HomeValuationPage() {
   return (
     <>
-      <section className="bg-[#f7f7f7] py-16 border-b border-[#e8e8e8]">
+      <section className="bg-[#f7f7f7] border-b border-[#e8e8e8] overflow-hidden relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-2">Seller Resources</p>
-          <h1 className="text-5xl font-bold text-[#222222] tracking-tight mb-4">What's Your Home Worth?</h1>
-          <p className="text-lg text-[#6a6a6a] max-w-2xl">
-            Get a free Comparative Market Analysis (CMA) for your Kelowna property. No algorithms — real data, honest numbers, from a local expert.
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[320px] items-center gap-0">
+            <div className="py-16">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-2">Seller Resources</p>
+              <h1 className="text-5xl font-bold text-[#222222] tracking-tight mb-4">What's Your Home Worth?</h1>
+              <p className="text-lg text-[#6a6a6a] max-w-xl">
+                Get a free Comparative Market Analysis (CMA) for your Kelowna property. No algorithms — real data, honest numbers, from a local expert.
+              </p>
+            </div>
+            <div className="hidden lg:block absolute inset-y-0 right-0 left-1/2">
+              <Image
+                src="/marki-luna-waterfront.webp"
+                alt="Marki Hoffman and Luna at the Okanagan waterfront"
+                fill
+                className="object-cover object-top"
+                priority
+                sizes="50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#f7f7f7] via-[#f7f7f7]/20 to-transparent" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -34,7 +50,7 @@ export default function HomeValuationPage() {
             {/* Form */}
             <div className="lg:col-span-3">
               <h2 className="text-2xl font-bold text-[#222222] mb-2">Request Your Free Valuation</h2>
-              <p className="text-sm text-[#6a6a6a] mb-8">Fill in the details below and Marki will prepare a thorough CMA for your property.</p>
+              <p className="text-sm text-[#6a6a6a] mb-8">Fill in the details below and I'll prepare a thorough CMA for your property.</p>
               <HomeValuationForm />
             </div>
 

@@ -42,7 +42,7 @@ export default async function HomePage() {
                 Starts Here.
               </h1>
               <p className="text-lg text-[#6a6a6a] leading-relaxed mb-10 max-w-xl">
-                Born and raised in the Okanagan. Over 10 years as a licensed REALTOR®, proudly following in her father's 43-year legacy of serving this community.
+                Born and raised in the Okanagan. Over 10 years as a licensed REALTOR®, proudly following in my father's 43-year legacy of serving this community.
               </p>
               <div className="flex flex-wrap gap-4 mb-10">
                 <Link

@@ -71,7 +71,7 @@ export default function AboutPage() {
                 Your Kelowna<br />Real Estate Expert
               </h1>
               <p className="text-lg text-[#6a6a6a] leading-relaxed mb-8">
-                10+ years as a licensed REALTOR® with Royal LePage Kelowna, following in the footsteps of her father, Gord Hoffman — 43 years serving the Okanagan.
+                10+ years as a licensed REALTOR® with Royal LePage Kelowna, following in the footsteps of my father, Gord Hoffman — 43 years serving the Okanagan.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
@@ -93,9 +93,10 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Hero photos — main portrait + stacked secondary */}
-            <div className="grid grid-cols-[1fr_140px] gap-3 items-end max-w-lg mx-auto lg:mx-0 lg:ml-auto">
-              <div className="relative aspect-[3/4] rounded-[28px] overflow-hidden">
+            {/* Portrait */}
+            <div className="relative max-w-sm mx-auto lg:mx-0 lg:ml-auto">
+              <div className="relative aspect-[3/4] rounded-[32px] overflow-hidden"
+                style={{ boxShadow: 'rgba(0,0,0,0.04) 0px 0px 0px 1px, rgba(0,0,0,0.12) 0px 8px 24px' }}>
                 <Image
                   src="/marki-headshot.webp"
                   alt="Marki Hoffman REALTOR® Royal LePage Kelowna"
@@ -104,27 +105,12 @@ export default function AboutPage() {
                   priority
                 />
               </div>
-              <div className="flex flex-col gap-3">
-                <div className="relative aspect-square rounded-[20px] overflow-hidden">
-                  <Image
-                    src="/marki-luna-waterfront.webp"
-                    alt="Marki and Luna at Okanagan Lake"
-                    fill
-                    className="object-cover object-top"
-                  />
-                </div>
-                <div className="relative aspect-square rounded-[20px] overflow-hidden">
-                  <Image
-                    src="/marki-luna-walking.webp"
-                    alt="Marki walking Luna at the waterfront"
-                    fill
-                    className="object-cover object-top"
-                  />
-                </div>
-                <div className="bg-[#1F6B5F] rounded-[16px] p-3 text-white text-center">
-                  <p className="font-bold text-sm">Luna</p>
-                  <p className="text-[10px] text-white/70 leading-tight">Chief Happiness Officer</p>
-                </div>
+              <div
+                className="absolute -bottom-5 -right-4 bg-[#1F6B5F] text-white rounded-[20px] px-5 py-4"
+                style={{ boxShadow: 'rgba(0,0,0,0.1) 0px 8px 24px' }}
+              >
+                <p className="text-2xl font-bold">Luna</p>
+                <p className="text-sm text-white/80">Chief Happiness Officer 🐾</p>
               </div>
             </div>
           </div>
@@ -133,85 +119,34 @@ export default function AboutPage() {
 
       {/* ── STORY ─────────────────────────────────────────────── */}
       <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-3">My Story</p>
-          <h2 className="text-3xl font-bold text-[#222222] tracking-tight mb-8">From the Okanagan, For the Okanagan</h2>
-          <div className="space-y-5 text-[#6a6a6a] leading-relaxed text-[15px]">
-            <p>
-              Born and raised in the Okanagan, real estate has always been part of my life. I've been a licensed Realtor® here for over 10 years, proudly following in the footsteps of my father, Gord Hoffman, who served local clients for an incredible 43 years. Working alongside him for my first decade in the business taught me the importance of integrity, trust, and building lasting relationships — values I continue to uphold with every client I work with.
-            </p>
-            <p>
-              Before my real estate career, I earned my degree from UBC Okanagan, including a year studying abroad in Australia. After a couple of years working as a recreation coordinator in the oil and gas sector, I worked aboard private luxury yachts in the U.S., where I gained invaluable experience in high-level service, organization, and attention to detail — qualities I bring to every client relationship today.
-            </p>
-            <p>
-              When I'm not helping clients buy or sell their homes, you can usually find me outdoors with my canine companion, Luna — my constant adventure buddy. I love hiking the local trails with her, mountain biking, and soaking up the Okanagan lifestyle. I've been snowboarding at Big White since I was four, and playing competitive softball as a teenager, now slow-pitch every summer.
-            </p>
-            <p>
-              For me, real estate is more than a transaction — it's about connection. Many of my clients become friends, and that's the part of this business I love most.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ── PHOTO GRID ────────────────────────────────────────── */}
-      <section className="pb-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {/* Row 1: wide landscape (col-span-2 on md+) + 2 portraits */}
-            <div className="col-span-2 relative aspect-square md:aspect-[16/9] rounded-[20px] overflow-hidden">
-              <Image
-                src="/marki-luna-waterfront.webp"
-                alt="Marki and Luna at Okanagan waterfront"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-3">My Story</p>
+              <h2 className="text-3xl font-bold text-[#222222] tracking-tight mb-8">From the Okanagan, For the Okanagan</h2>
+              <div className="space-y-5 text-[#6a6a6a] leading-relaxed text-[15px]">
+                <p>
+                  Born and raised in the Okanagan, real estate has always been part of my life. I've been a licensed Realtor® here for over 10 years, proudly following in the footsteps of my father, Gord Hoffman, who served local clients for an incredible 43 years. Working alongside him for my first decade in the business taught me the importance of integrity, trust, and building lasting relationships — values I continue to uphold with every client I work with.
+                </p>
+                <p>
+                  Before my real estate career, I earned my degree from UBC Okanagan, including a year studying abroad in Australia. After a couple of years working as a recreation coordinator in the oil and gas sector, I worked aboard private luxury yachts in the U.S., where I gained invaluable experience in high-level service, organization, and attention to detail — qualities I bring to every client relationship today.
+                </p>
+                <p>
+                  When I'm not helping clients buy or sell their homes, you can usually find me outdoors with Luna — my constant adventure buddy. I love hiking the local trails, mountain biking, and soaking up the Okanagan lifestyle. I've been snowboarding at Big White since I was four, and slow-pitch softball every summer.
+                </p>
+                <p>
+                  For me, real estate is more than a transaction — it's about connection. Many of my clients become friends, and that's the part of this business I love most.
+                </p>
+              </div>
             </div>
-            <div className="relative aspect-square md:aspect-[3/4] rounded-[20px] overflow-hidden">
+            <div className="relative aspect-[4/5] rounded-[32px] overflow-hidden max-w-md mx-auto lg:mx-0"
+              style={{ boxShadow: 'rgba(0,0,0,0.04) 0px 0px 0px 1px, rgba(0,0,0,0.1) 0px 8px 24px' }}>
               <Image
                 src="/marki-luna-walking.webp"
-                alt="Marki walking Luna at the park"
+                alt="Marki walking Luna at the Okanagan waterfront"
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 50vw, 25vw"
-              />
-            </div>
-            <div className="relative aspect-square md:aspect-[3/4] rounded-[20px] overflow-hidden">
-              <Image
-                src="/marki-headshot-outdoor.webp"
-                alt="Marki Hoffman professional photo"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 768px) 50vw, 25vw"
-              />
-            </div>
-
-            {/* Row 2: portrait + wide landscape (col-span-2 on md+) + portrait */}
-            <div className="relative aspect-square md:aspect-[3/4] rounded-[20px] overflow-hidden">
-              <Image
-                src="/marki-luna-lake.webp"
-                alt="Marki and Luna by Okanagan Lake"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 768px) 50vw, 25vw"
-              />
-            </div>
-            <div className="col-span-2 relative aspect-square md:aspect-[16/9] rounded-[20px] overflow-hidden">
-              <Image
-                src="/hero.webp"
-                alt="Marki and Luna in the Okanagan"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
-            <div className="relative aspect-square md:aspect-[3/4] rounded-[20px] overflow-hidden">
-              <Image
-                src="/luna-sold-rl.webp"
-                alt="Luna celebrating another sold property"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 50vw, 25vw"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </div>
