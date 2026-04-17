@@ -8,6 +8,7 @@ export interface Listing {
   sqft: number
   type: 'For Sale' | 'Sold' | 'For Lease'
   image: string
+  images: string[]
   description: string
   features: string[]
   mlsNumber: string
@@ -24,6 +25,14 @@ export const listings: Listing[] = [
     sqft: 0,
     type: 'Sold',
     image: '/sold-fall.webp',
+    images: [
+      '/sold-fall.webp',
+      '/luna-sold-wave.webp',
+      '/marki-luna-sold.webp',
+      'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80',
+      'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80',
+      'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=80',
+    ],
     description: "Quietly located in desirable 'Gablecraft in the Mission'. Beautifully maintained no-step rancher style home with high ceilings, island kitchen with stainless steel appliances, new flooring, private patio area, double garage and more! Pet friendly and no age or rental restrictions.",
     features: ['No-Step Rancher', 'Island Kitchen', 'Fenced Yard', 'Attached Double Garage', 'Pet Friendly', 'No Age Restrictions'],
     mlsNumber: 'MLS10346085',
@@ -38,6 +47,14 @@ export const listings: Listing[] = [
     sqft: 2_840,
     type: 'For Sale',
     image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80',
+      'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80',
+      'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=80',
+      'https://images.unsplash.com/photo-1575517111839-3a3843ee7f5d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80',
+    ],
     description: 'Stunning Okanagan Lake views from this beautifully renovated family home. Open-concept main floor, chef\'s kitchen, and expansive deck perfect for entertaining.',
     features: ['Lake Views', 'Updated Kitchen', 'Double Garage', 'Large Deck'],
     mlsNumber: '10XXXXXX',
@@ -52,6 +69,14 @@ export const listings: Listing[] = [
     sqft: 1_960,
     type: 'For Sale',
     image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1200&q=80',
+      'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80',
+      'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1200&q=80',
+      'https://images.unsplash.com/photo-1416453072034-c8dbfa2856b1?w=1200&q=80',
+      'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80',
+    ],
     description: 'Charming rancher in sought-after West Kelowna, minutes from Mission Hill Winery. Single-level living with a beautifully landscaped yard and mountain views.',
     features: ['Rancher', 'Mountain Views', 'Landscaped Yard', 'Near Wineries'],
     mlsNumber: '10XXXXXY',
@@ -66,6 +91,14 @@ export const listings: Listing[] = [
     sqft: 1_050,
     type: 'For Sale',
     image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80',
+      'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&q=80',
+      'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=80',
+      'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1200&q=80',
+    ],
     description: 'Modern downtown condo steps from the waterfront, restaurants, and shops. Bright open layout with quartz counters, stainless appliances, and a private balcony.',
     features: ['Downtown Location', 'Balcony', 'In-Suite Laundry', 'Secure Parking'],
     mlsNumber: '10XXXXYZ',
@@ -80,6 +113,15 @@ export const listings: Listing[] = [
     sqft: 3_650,
     type: 'For Sale',
     image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80',
+      'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80',
+      'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80',
+      'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=1200&q=80',
+      'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1200&q=80',
+      'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80',
+    ],
     description: 'Executive estate in the Upper Mission with panoramic valley and lake views. Gourmet kitchen, home theatre, pool, and triple garage on a sprawling 0.4-acre lot.',
     features: ['Pool', 'Triple Garage', 'Valley Views', 'Home Theatre'],
     mlsNumber: '10XXXXYY',
@@ -94,6 +136,14 @@ export const listings: Listing[] = [
     sqft: 2_300,
     type: 'Sold',
     image: '/luna-sold-autumn.webp',
+    images: [
+      '/luna-sold-autumn.webp',
+      '/marki-luna-sold.webp',
+      'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80',
+      'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1200&q=80',
+      'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80',
+    ],
     description: 'Beautifully updated two-storey home backing onto Knox Mountain Park. Hardwood floors throughout, updated bathrooms, and a private backyard oasis.',
     features: ['Backing Parkland', 'Updated Baths', 'Hardwood Floors', 'Private Yard'],
     mlsNumber: '10XXXZZZ',
@@ -108,6 +158,13 @@ export const listings: Listing[] = [
     sqft: 1_100,
     type: 'For Lease',
     image: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80',
+      'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=80',
+      'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80',
+    ],
     description: 'Premium waterfront rental with unobstructed lake views. Modern finishes, floor-to-ceiling windows, and access to rooftop amenities and concierge.',
     features: ['Waterfront', 'Rooftop Amenities', 'Concierge', 'Furnished Option'],
     mlsNumber: '10XXXAAA',

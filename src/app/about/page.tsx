@@ -93,21 +93,38 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="relative max-w-md mx-auto lg:mx-0 lg:ml-auto">
-              <div className="relative aspect-[3/4] rounded-[32px] overflow-hidden">
+            {/* Hero photos — main portrait + stacked secondary */}
+            <div className="grid grid-cols-[1fr_140px] gap-3 items-end max-w-lg mx-auto lg:mx-0 lg:ml-auto">
+              <div className="relative aspect-[3/4] rounded-[28px] overflow-hidden">
                 <Image
                   src="/marki-headshot.webp"
                   alt="Marki Hoffman REALTOR® Royal LePage Kelowna"
                   fill
                   className="object-cover object-top"
+                  priority
                 />
               </div>
-              <div
-                className="absolute -bottom-5 -left-5 bg-[#1F6B5F] text-white rounded-[20px] p-5"
-                style={{ boxShadow: 'rgba(0,0,0,0.1) 0px 8px 24px' }}
-              >
-                <p className="text-3xl font-bold">Luna</p>
-                <p className="text-sm text-white/80">Chief Happiness Officer 🐾</p>
+              <div className="flex flex-col gap-3">
+                <div className="relative aspect-square rounded-[20px] overflow-hidden">
+                  <Image
+                    src="/marki-luna-waterfront.webp"
+                    alt="Marki and Luna at Okanagan Lake"
+                    fill
+                    className="object-cover object-top"
+                  />
+                </div>
+                <div className="relative aspect-square rounded-[20px] overflow-hidden">
+                  <Image
+                    src="/marki-luna-walking.webp"
+                    alt="Marki walking Luna at the waterfront"
+                    fill
+                    className="object-cover object-top"
+                  />
+                </div>
+                <div className="bg-[#1F6B5F] rounded-[16px] p-3 text-white text-center">
+                  <p className="font-bold text-sm">Luna</p>
+                  <p className="text-[10px] text-white/70 leading-tight">Chief Happiness Officer</p>
+                </div>
               </div>
             </div>
           </div>
@@ -132,6 +149,71 @@ export default function AboutPage() {
             <p>
               For me, real estate is more than a transaction — it's about connection. Many of my clients become friends, and that's the part of this business I love most.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── PHOTO GRID ────────────────────────────────────────── */}
+      <section className="pb-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {/* Row 1: wide landscape + portrait */}
+            <div className="col-span-2 relative aspect-[16/9] rounded-[20px] overflow-hidden">
+              <Image
+                src="/marki-luna-waterfront.webp"
+                alt="Marki and Luna at Okanagan waterfront"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+            <div className="relative aspect-[3/4] rounded-[20px] overflow-hidden">
+              <Image
+                src="/marki-luna-walking.webp"
+                alt="Marki walking Luna at the park"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 50vw, 25vw"
+              />
+            </div>
+            <div className="relative aspect-[3/4] rounded-[20px] overflow-hidden">
+              <Image
+                src="/marki-headshot-outdoor.webp"
+                alt="Marki Hoffman professional photo"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 768px) 50vw, 25vw"
+              />
+            </div>
+
+            {/* Row 2: portrait + wide landscape */}
+            <div className="relative aspect-[3/4] rounded-[20px] overflow-hidden">
+              <Image
+                src="/marki-luna-lake.webp"
+                alt="Marki and Luna by Okanagan Lake"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 768px) 50vw, 25vw"
+              />
+            </div>
+            <div className="col-span-2 relative aspect-[16/9] rounded-[20px] overflow-hidden">
+              <Image
+                src="/hero.webp"
+                alt="Marki and Luna in the Okanagan"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+            <div className="relative aspect-[3/4] rounded-[20px] overflow-hidden">
+              <Image
+                src="/luna-sold-rl.webp"
+                alt="Luna celebrating another sold property"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 50vw, 25vw"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -167,43 +249,25 @@ export default function AboutPage() {
           <h2 className="text-4xl font-bold tracking-tight mb-4">Let's Connect</h2>
           <p className="text-white/70 text-lg mb-8">Follow along on Instagram and Facebook for Kelowna market updates, new listings, and local life.</p>
           <div className="flex flex-wrap gap-4 justify-center mb-10">
-            <a
-              href="https://www.instagram.com/markihoffmanrealestate/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white/10 hover:bg-[#1F6B5F] text-white font-semibold px-6 py-3 rounded-lg transition-colors border border-white/20"
-            >
+            <a href="https://www.instagram.com/markihoffmanrealestate/" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white/10 hover:bg-[#1F6B5F] text-white font-semibold px-6 py-3 rounded-lg transition-colors border border-white/20">
               <InstagramIcon size={16} /> @markihoffmanrealestate
             </a>
-            <a
-              href="https://www.facebook.com/hoffmanrealestatekelowna"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white/10 hover:bg-[#1F6B5F] text-white font-semibold px-6 py-3 rounded-lg transition-colors border border-white/20"
-            >
+            <a href="https://www.facebook.com/hoffmanrealestatekelowna" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white/10 hover:bg-[#1F6B5F] text-white font-semibold px-6 py-3 rounded-lg transition-colors border border-white/20">
               <FacebookIcon size={16} /> Facebook
             </a>
-            <a
-              href="https://www.linkedin.com/in/marki-hoffman-076a4b167"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white/10 hover:bg-[#1F6B5F] text-white font-semibold px-6 py-3 rounded-lg transition-colors border border-white/20"
-            >
+            <a href="https://www.linkedin.com/in/marki-hoffman-076a4b167" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white/10 hover:bg-[#1F6B5F] text-white font-semibold px-6 py-3 rounded-lg transition-colors border border-white/20">
               <LinkedInIcon size={16} /> LinkedIn
             </a>
-            <a
-              href="https://linktr.ee/markihoffmanrealestate"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white/10 hover:bg-[#1F6B5F] text-white font-semibold px-6 py-3 rounded-lg transition-colors border border-white/20"
-            >
+            <a href="https://linktr.ee/markihoffmanrealestate" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white/10 hover:bg-[#1F6B5F] text-white font-semibold px-6 py-3 rounded-lg transition-colors border border-white/20">
               🌿 Linktree
             </a>
           </div>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 bg-[#1F6B5F] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#174f47] transition-colors"
-          >
+          <Link href="/contact"
+            className="inline-flex items-center gap-2 bg-[#1F6B5F] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#174f47] transition-colors">
             Work With Marki <ArrowRight size={16} />
           </Link>
         </div>
