@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
 
@@ -35,11 +36,15 @@ export default function ContactPage() {
   return (
     <>
       {/* ── HEADER ────────────────────────────────────────────── */}
-      <section className="bg-[#f7f7f7] py-16 border-b border-[#e8e8e8]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image src="/kelowna-boardwalk.webp" alt="Kelowna waterfront boardwalk — Okanagan Lake" fill className="object-cover object-center" sizes="100vw" priority />
+          <div className="absolute inset-0 bg-black/55" />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-2">Get in Touch</p>
-          <h1 className="text-5xl font-bold text-[#222222] tracking-tight mb-4">Contact Marki</h1>
-          <p className="text-lg text-[#6a6a6a] max-w-xl">
+          <h1 className="text-5xl font-bold text-white tracking-tight mb-4">Contact Marki</h1>
+          <p className="text-lg text-white/80 max-w-xl">
             Ready to buy, sell, or just have questions? I'd love to hear from you.
           </p>
         </div>
