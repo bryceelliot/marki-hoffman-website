@@ -15,9 +15,21 @@ export default async function HomePage() {
   return (
     <>
       {/* ── HERO ──────────────────────────────────────────────── */}
-      <section className="bg-[#f7f7f7] overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[88vh] items-center gap-0">
+      <section className="bg-[#f7f7f7] overflow-hidden relative min-h-[88vh]">
+        {/* Photo bleeds to the right viewport edge, independent of container */}
+        <div className="absolute inset-y-0 right-0 left-1/2 hidden lg:block">
+          <Image
+            src="/hero.webp"
+            alt="Marki Hoffman with Luna — Kelowna, BC"
+            fill
+            className="object-cover object-center"
+            priority
+            sizes="50vw"
+          />
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[88vh] items-center">
 
             {/* Text side */}
             <div className="py-20 lg:py-24 lg:pr-12">
@@ -65,17 +77,8 @@ export default async function HomePage() {
               </div>
             </div>
 
-            {/* Photo side */}
-            <div className="hidden lg:block relative h-full min-h-[88vh]">
-              <Image
-                src="/hero.webp"
-                alt="Marki Hoffman with Luna — Kelowna, BC"
-                fill
-                className="object-cover object-center"
-                priority
-                sizes="50vw"
-              />
-            </div>
+            {/* Right column spacer — photo is absolute above */}
+            <div className="hidden lg:block" />
 
           </div>
         </div>
@@ -207,6 +210,36 @@ export default async function HomePage() {
             {reviews.slice(0, 6).map(review => (
               <ReviewCard key={review.id} review={review} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── HOME VALUATION CTA ───────────────────────────────── */}
+      <section className="py-16 bg-[#f7f7f7]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#1F6B5F] rounded-[28px] px-8 py-12 md:px-14 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-3">Free, No Obligation</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">What's Your Home Worth?</h2>
+              <p className="text-white/80 leading-relaxed">
+                Get a free Comparative Market Analysis based on real recent sales in your neighbourhood — not algorithms or guesswork.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 md:justify-end">
+              <Link
+                href="/home-valuation"
+                className="inline-flex items-center justify-center gap-2 bg-white text-[#1F6B5F] font-semibold px-7 py-3.5 rounded-lg hover:bg-[#e4f0ed] transition-colors"
+              >
+                Get Free Valuation <ArrowRight size={16} />
+              </Link>
+              <a
+                href="tel:2503175008"
+                className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-white/20 transition-colors border border-white/20"
+              >
+                <Phone size={16} />
+                Call Marki
+              </a>
+            </div>
           </div>
         </div>
       </section>

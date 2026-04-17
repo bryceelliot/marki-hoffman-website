@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft, Bed, Bath, Square, Phone, Mail, MapPin, CheckCircle2 } from 'lucide-react'
 import { listings } from '@/data/listings'
+import ListingInquiryForm from '@/components/ListingInquiryForm'
 
 interface Props {
   params: Promise<{ id: string }>
@@ -146,28 +147,23 @@ export default async function ListingDetailPage({ params }: Props) {
                     : "Get in touch for a showing, more details, or to make an offer. I typically respond within a few hours."}
                 </p>
 
-                <div className="space-y-3 mb-6">
+                <ListingInquiryForm address={listing.address} />
+
+                <div className="flex gap-2 mt-3">
                   <a
                     href="tel:2503175008"
-                    className="flex items-center justify-center gap-2 w-full bg-[#222222] text-white font-semibold text-sm py-3 rounded-lg hover:bg-[#1F6B5F] transition-colors"
+                    className="flex items-center justify-center gap-1.5 flex-1 border border-[#e8e8e8] bg-white text-[#222222] font-semibold text-xs py-2.5 rounded-lg hover:border-[#222222] transition-colors"
                   >
-                    <Phone size={14} /> (250) 317-5008
+                    <Phone size={12} /> Call
                   </a>
                   <a
                     href="mailto:marki@markihoffman.com"
-                    className="flex items-center justify-center gap-2 w-full border border-[#e8e8e8] bg-white text-[#222222] font-semibold text-sm py-3 rounded-lg hover:border-[#222222] transition-colors"
+                    className="flex items-center justify-center gap-1.5 flex-1 border border-[#e8e8e8] bg-white text-[#222222] font-semibold text-xs py-2.5 rounded-lg hover:border-[#222222] transition-colors"
                   >
-                    <Mail size={14} /> marki@markihoffman.com
+                    <Mail size={12} /> Email
                   </a>
-                  <Link
-                    href="/contact"
-                    className="flex items-center justify-center gap-2 w-full border border-[#e8e8e8] bg-white text-[#222222] font-semibold text-sm py-3 rounded-lg hover:border-[#222222] transition-colors"
-                  >
-                    Send a Message
-                  </Link>
                 </div>
-
-                <p className="text-xs text-[#6a6a6a] text-center">Typically responds within a few hours during business hours.</p>
+                <p className="text-xs text-[#6a6a6a] text-center mt-3">Typically responds within a few hours during business hours.</p>
               </div>
             </div>
 

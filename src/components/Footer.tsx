@@ -64,6 +64,7 @@ export default function Footer() {
               {[
                 { href: '/about', label: 'About Marki' },
                 { href: '/listings', label: 'Listings' },
+                { href: '/home-valuation', label: "What's My Home Worth?" },
                 { href: '/client-resources', label: 'Client Resources' },
                 { href: '/blog', label: 'Blog' },
                 { href: '/contact', label: 'Contact' },
