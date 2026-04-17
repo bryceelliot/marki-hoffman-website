@@ -7,7 +7,7 @@ import { listings } from '@/data/listings'
 
 export const metadata: Metadata = {
   title: 'Listings',
-  description: 'Browse current homes for sale, sold properties, and rentals by Marki Hoffman in Kelowna and the Okanagan Valley.',
+  description: 'Browse current homes for sale by Marki Hoffman in Kelowna and the Okanagan Valley — Royal LePage Kelowna.',
 }
 
 export default function ListingsPage() {

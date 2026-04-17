@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Phone, Mail, Award, MapPin, GraduationCap, Heart, ArrowRight } from 'lucide-react'
+import { Phone, Mail, MapPin, GraduationCap, Award, Heart, ArrowRight } from 'lucide-react'
 
 function InstagramIcon({ size = 16 }: { size?: number }) {
   return (
@@ -29,7 +29,7 @@ function LinkedInIcon({ size = 16 }: { size?: number }) {
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Meet Marki Hoffman — Kelowna born and raised REALTOR® with over 10 years of experience at Royal LePage Kelowna, following in her father\'s 43-year legacy.',
+  description: 'Meet Marki Hoffman — Kelowna born and raised REALTOR® with over 10 years of experience at Royal LePage Kelowna, following in my father\'s 43-year legacy.',
 }
 
 const credentials = [
@@ -61,6 +61,14 @@ const values = [
 export default function AboutPage() {
   return (
     <>
+      {/* ── LUNA TOP BANNER ───────────────────────────────────── */}
+      <div className="bg-[#1F6B5F] py-3 px-4 flex items-center justify-center gap-4 overflow-hidden">
+        <div className="relative w-10 h-10 rounded-full overflow-hidden shrink-0 border-2 border-white/30">
+          <Image src="/luna-garden-flower.webp" alt="Luna" fill className="object-cover object-top" />
+        </div>
+        <p className="text-white text-sm font-medium">Say hi to Luna — my Chief Happiness Officer 🐾</p>
+      </div>
+
       {/* ── HERO ──────────────────────────────────────────────── */}
       <section className="bg-[#f7f7f7] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -105,12 +113,10 @@ export default function AboutPage() {
                   priority
                 />
               </div>
-              <div
-                className="absolute -bottom-5 -right-4 bg-[#1F6B5F] text-white rounded-[20px] px-5 py-4"
-                style={{ boxShadow: 'rgba(0,0,0,0.1) 0px 8px 24px' }}
-              >
-                <p className="text-2xl font-bold">Luna</p>
-                <p className="text-sm text-white/80">Chief Happiness Officer 🐾</p>
+              {/* Luna floating badge */}
+              <div className="absolute -bottom-5 -right-4 rounded-[20px] overflow-hidden w-24 h-24 border-4 border-white"
+                style={{ boxShadow: 'rgba(0,0,0,0.1) 0px 8px 24px' }}>
+                <Image src="/luna-garden-flower.webp" alt="Luna with a flower" fill className="object-cover object-top" />
               </div>
             </div>
           </div>
@@ -129,6 +135,9 @@ export default function AboutPage() {
                   Born and raised in the Okanagan, real estate has always been part of my life. I've been a licensed Realtor® here for over 10 years, proudly following in the footsteps of my father, Gord Hoffman, who served local clients for an incredible 43 years. Working alongside him for my first decade in the business taught me the importance of integrity, trust, and building lasting relationships — values I continue to uphold with every client I work with.
                 </p>
                 <p>
+                  Today, Gord is still by my side as my unlicensed assistant and biggest supporter. That family foundation is everything to me.
+                </p>
+                <p>
                   Before my real estate career, I earned my degree from UBC Okanagan, including a year studying abroad in Australia. After a couple of years working as a recreation coordinator in the oil and gas sector, I worked aboard private luxury yachts in the U.S., where I gained invaluable experience in high-level service, organization, and attention to detail — qualities I bring to every client relationship today.
                 </p>
                 <p>
@@ -139,13 +148,13 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="relative aspect-[4/5] rounded-[32px] overflow-hidden max-w-md mx-auto lg:mx-0"
+            <div className="relative aspect-[3/2] rounded-[32px] overflow-hidden max-w-md mx-auto lg:mx-0"
               style={{ boxShadow: 'rgba(0,0,0,0.04) 0px 0px 0px 1px, rgba(0,0,0,0.1) 0px 8px 24px' }}>
               <Image
-                src="/marki-luna-walking.webp"
-                alt="Marki walking Luna at the Okanagan waterfront"
+                src="/marki-gord-park.webp"
+                alt="Marki and her father Gord walking together in the park"
                 fill
-                className="object-cover"
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
@@ -174,6 +183,36 @@ export default function AboutPage() {
                 <p className="text-sm text-[#6a6a6a] leading-relaxed">{description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── AWARDS ────────────────────────────────────────────── */}
+      <section className="py-16 bg-white border-t border-[#f0f0f0]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-2">Recognition</p>
+            <h2 className="text-3xl font-bold text-[#222222] tracking-tight">Awards & Achievements</h2>
+          </div>
+          <div className="flex flex-wrap justify-center gap-12 items-center">
+            <div className="flex flex-col items-center gap-3">
+              <div className="relative w-32 h-32">
+                <Image src="/Presidents-Gold.webp" alt="Royal LePage President's Gold Award" fill className="object-contain" />
+              </div>
+              <div className="text-center">
+                <p className="font-semibold text-[#222222] text-sm">President's Gold Award</p>
+                <p className="text-xs text-[#6a6a6a]">Royal LePage · 2022–2023</p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center gap-3">
+              <div className="relative w-32 h-32">
+                <Image src="/award-lof-excellence.webp" alt="Award of Excellence" fill className="object-contain" />
+              </div>
+              <div className="text-center">
+                <p className="font-semibold text-[#222222] text-sm">Award of Excellence</p>
+                <p className="text-xs text-[#6a6a6a]">Royal LePage Kelowna</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

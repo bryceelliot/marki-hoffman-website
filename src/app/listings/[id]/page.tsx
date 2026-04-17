@@ -106,6 +106,21 @@ export default async function ListingDetailPage({ params }: Props) {
                 </ul>
               </div>
 
+              {listing.canvaLink && (
+                <div className="mt-6 bg-[#e4f0ed] rounded-[16px] p-5">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-2">Land Assembly Package</p>
+                  <p className="text-sm text-[#444] mb-3 leading-relaxed">View the full land assembly details, site plan, and opportunity overview.</p>
+                  <a
+                    href={listing.canvaLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-[#1F6B5F] text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-[#174f47] transition-colors"
+                  >
+                    View Assembly Package →
+                  </a>
+                </div>
+              )}
+
               {listing.mlsNumber && (
                 <p className="mt-6 text-xs text-[#6a6a6a]">MLS® {listing.mlsNumber}</p>
               )}
