@@ -135,6 +135,48 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* ── INSTAGRAM ─────────────────────────────────────────── */}
+      <section className="py-16 bg-[#f7f7f7]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-1">Follow Along</p>
+              <h2 className="text-2xl font-bold text-[#222222]">@markihoffmanrealestate</h2>
+            </div>
+            <a
+              href="https://www.instagram.com/markihoffmanrealestate/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-[#e8e8e8] bg-white text-[#222222] font-semibold text-sm px-5 py-2.5 rounded-lg hover:border-[#222222] transition-colors shrink-0"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Follow
+            </a>
+          </div>
+          <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
+            {[
+              { src: '/marki-luna-autumn-field.webp', alt: 'Marki and Luna in the autumn field' },
+              { src: '/luna-sold-wave-sign.webp', alt: 'Luna celebrating a sale' },
+              { src: '/marki-luna-waterfront-walk.webp', alt: 'Marki walking Luna at the waterfront' },
+              { src: '/luna-sold-house.webp', alt: 'Luna at a sold property' },
+              { src: '/marki-luna-sold-woods.webp', alt: 'Marki and Luna at a sold sign' },
+              { src: '/luna-garden-flower.webp', alt: 'Luna in the garden' },
+            ].map(({ src, alt }) => (
+              <a
+                key={src}
+                href="https://www.instagram.com/markihoffmanrealestate/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative aspect-square overflow-hidden rounded-xl group block"
+              >
+                <Image src={src} alt={alt} fill className="object-cover transition-transform duration-300 group-hover:scale-105" sizes="(max-width: 640px) 33vw, 16vw" />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── ABOUT TEASER ──────────────────────────────────────── */}
       <section className="py-20 bg-[#f7f7f7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -240,48 +282,6 @@ export default async function HomePage() {
                 Call Marki
               </a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── INSTAGRAM ─────────────────────────────────────────── */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-6">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#1F6B5F] mb-1">Follow Along</p>
-              <h2 className="text-2xl font-bold text-[#222222]">@markihoffmanrealestate</h2>
-            </div>
-            <a
-              href="https://www.instagram.com/markihoffmanrealestate/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-[#e8e8e8] text-[#222222] font-semibold text-sm px-5 py-2.5 rounded-lg hover:border-[#222222] transition-colors shrink-0"
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-              Follow
-            </a>
-          </div>
-          <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
-            {[
-              { src: '/marki-luna-autumn-field.webp', alt: 'Marki and Luna in the autumn field' },
-              { src: '/luna-sold-wave-sign.webp', alt: 'Luna celebrating a sale' },
-              { src: '/marki-luna-waterfront-walk.webp', alt: 'Marki walking Luna at the waterfront' },
-              { src: '/luna-sold-house.webp', alt: 'Luna at a sold property' },
-              { src: '/marki-luna-sold-woods.webp', alt: 'Marki and Luna at a sold sign' },
-              { src: '/luna-garden-flower.webp', alt: 'Luna in the garden' },
-            ].map(({ src, alt }) => (
-              <a
-                key={src}
-                href="https://www.instagram.com/markihoffmanrealestate/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative aspect-square overflow-hidden rounded-xl group block"
-              >
-                <Image src={src} alt={alt} fill className="object-cover transition-transform duration-300 group-hover:scale-105" sizes="(max-width: 640px) 33vw, 16vw" />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
-              </a>
-            ))}
           </div>
         </div>
       </section>
