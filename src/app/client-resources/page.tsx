@@ -65,7 +65,7 @@ export default function ClientResourcesPage() {
       {/* ── HEADER ────────────────────────────────────────────── */}
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/kelowna-aerial.webp" alt="Aerial view of Kelowna BC Okanagan Valley — real estate market served by Marki Hoffman" fill className="object-cover object-center" />
+          <Image src="/marki-luna-lake.webp" alt="Okanagan Lake view — Kelowna BC real estate by Marki Hoffman" fill className="object-cover object-center" sizes="100vw" priority />
           <div className="absolute inset-0 bg-black/55" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
